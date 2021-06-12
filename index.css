@@ -1,0 +1,18 @@
+html{
+    background-color:aliceblue;    
+}
+
+
+.i1,.i2{
+    
+    border: 0;
+    outline: 0;
+    border-bottom: 1px dashed black;
+}
+input:hover{
+    background-color:  #aaf07f;
+}
+button:hover{
+    background-color:grey ;
+    color:cyan;
+}
