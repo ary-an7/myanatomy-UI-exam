@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="index.css">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +10,20 @@
 <body>
     
     <h4>LOGIN FORM:</h4>
-
+    <div class="center">
+    <fieldset>
     <div id="error"></div>
-    
     <form id="form" type="submit" name="myform">
-    <fieldset><legend><h3>Details</h3></legend>
-        <div>
     <label for="email" >Email:</label>
     <input id="email" name="email" type="email" class="i1" placeholder="Enter your email here"></input>
-    </div>  
     <br><br>
-    <div>
     <label for="password" >Password:</label>
-    <input id="pass" name="pass" type="password" class="i2" placeholder="Enter your password here"></input>
-    </div>
+    <input id="pass" name="pass" type="password" class="i2" placeholder="Enter password here"></input>
     <br><br>
-    <div>
-    <button type="submit" onclick="onclick_function">Login</button>
-    </div>  
-</fieldset>
+    <button type="submit" onclick="">Login</button>
     </form>
+    </fieldset>
+    </div>
     <script src="index.js" type="text/javascript"></script>
 
 </body>
