@@ -8,15 +8,11 @@ form.addEventListener('submit',(e) => {
     let messages =[]
     if(email.value===''  || email.value==null)
     {
-        messages.push("name required")
+        alert("name required")
     }
     if(pass.value===''  || pass.value==null)
     {
-        messages.push("password required")
-    }
-    if(pass.value.length<=8)
-    {
-        messages.push("\npassword must be 8 characters.")
+        alert("password required")
     }
 
     if(messages.length>0)
@@ -24,9 +20,12 @@ form.addEventListener('submit',(e) => {
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
     }
+    if(pass.value!=''  && email.value!='')
+    {
+        alert("Successfully Logged In...!")
+    }
 
 })
-
 
 function validate() {
     if(document.getElementById["email"].value==='')
@@ -35,10 +34,6 @@ function validate() {
         return false;
     }
     
-}
-
-function onclick_function(){
-    alert("Successfully Logged In...!")
 }
 
 
